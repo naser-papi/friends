@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "dotenv -e .env npx tsnd src/server.ts",
-    "test": "concurrently \"dotenv -e .env.test npx tsnd src/server.ts\" \"dotenv -e .env.test cypress open\""
+    "test": "concurrently \"dotenv -e .env.test npx tsnd src/server.ts\" \"dotenv -e .env.test cypress open\"",
+    "prettier-format": "prettier --config .prettierrc src/**/*.ts cypress/**/*.ts --write"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -26,14 +27,16 @@
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
-    "cypress": "^12.11.0",
-    "cypress-plugin-api": "^2.11.0",
     "@types/jsonwebtoken": "^9.0.2",
     "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.4",
     "concurrently": "^8.0.1",
+    "cypress": "^12.11.0",
+    "cypress-plugin-api": "^2.11.0",
     "eslint": "^8.40.0",
-    "prettier": "^2.8.8",
+    "prettier": "2.8.8",
     "ts-node-dev": "^2.0.0"
   }
 }
