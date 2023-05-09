@@ -1,0 +1,15 @@
+{
+  "invalidData": {
+    "description": "test"
+  },
+  "invalidUserId": {
+    "userId": "dummyId",
+    "description": "test",
+    "picturePath": "abc.jpg"
+  },
+  "precise": {
+    "userid": "",
+    "description": "test",
+    "picturePath": "abc.jpg"
+  }
+}

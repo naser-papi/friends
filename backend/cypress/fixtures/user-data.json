@@ -1,0 +1,63 @@
+{
+  "precise": {
+    "firstName": "Naser",
+    "lastName": "Papi",
+    "email": "papinaser@gmai.com",
+    "password": "1234567",
+    "picturePath": "abc.jpg",
+    "friends": [],
+    "location": "USA",
+    "occupation": "Test"
+  },
+  "newFriend": {
+    "firstName": "Zahra",
+    "lastName": "Shamivand",
+    "email": "zari@gmai.com",
+    "password": "1234567",
+    "picturePath": "zari.jpg",
+    "friends": [],
+    "location": "USA",
+    "occupation": "Test"
+  },
+  "requireIssue": {
+    "firstName": "Naser",
+    "email": "papinaser@gmai.com",
+    "password": "1234567",
+    "picturePath": "abc.jpg",
+    "friends": [],
+    "location": "USA",
+    "occupation": "Test"
+  },
+  "invalidEmail": {
+    "firstName": "Naser",
+    "lastName": "Papi",
+    "email": "papinaser",
+    "password": "1234567",
+    "picturePath": "abc.jpg",
+    "friends": [],
+    "location": "USA",
+    "occupation": "Test"
+  },
+  "passwordLengthIssue": {
+    "firstName": "Naser",
+    "lastName": "Papi",
+    "email": "papinaser@gmai.com",
+    "password": "1234",
+    "picturePath": "abc.jpg",
+    "friends": [],
+    "location": "USA",
+    "occupation": "Test"
+  },
+  "validLogin": {
+    "email": "naser.papi.dev@gmail.com",
+    "password": "12345678"
+  },
+  "invalidLogin1": {
+    "email": "papinaser@gmail.com",
+    "password": "12345678"
+  },
+  "invalidLogin2": {
+    "email": "naser.papi.dev@gmail.com",
+    "password": "111111"
+  }
+}
