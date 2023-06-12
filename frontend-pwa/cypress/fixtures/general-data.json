@@ -1,0 +1,20 @@
+{
+  "pages": [
+    {
+      "url": "/",
+      "title": "Home"
+    },
+    {
+      "url": "/login",
+      "title": "Login"
+    },
+    {
+      "url": "/profile/1234",
+      "title": "Profile"
+    }
+  ],
+  "theme": {
+    "darkBackground": "#838383",
+    "lightBackground": "#efefef"
+  }
+}

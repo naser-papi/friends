@@ -1,0 +1,63 @@
+{
+  "savedUser": {
+    "token": "fake.token.2023",
+    "firstName": "Naser",
+    "lastName": "Papi",
+    "picturePath": "http://localhost:3000/assets/profile.png",
+    "email": "naser.papi.dev@gmail.com",
+    "location": "Tehran",
+    "occupation": "Test",
+    "roles": [
+      "User"
+    ],
+    "friends": []
+  },
+  "fields": [
+    {
+      "name": "firstName",
+      "type": "text",
+      "required": true,
+      "min": 2,
+      "max": 12
+    },
+    {
+      "name": "lastName",
+      "type": "text",
+      "required": true,
+      "min": 3,
+      "max": 12
+    },
+    {
+      "name": "email",
+      "type": "email",
+      "required": true
+    },
+    {
+      "name": "password",
+      "type": "password",
+      "required": true,
+      "min": 4
+    },
+    {
+      "name": "passwordConfirm",
+      "type": "password",
+      "required": true
+    },
+    {
+      "name": "location",
+      "type": "text",
+      "required": true,
+      "min": 3
+    },
+    {
+      "name": "occupation",
+      "type": "text",
+      "min": 3
+    },
+    {
+      "name": "picturePath",
+      "type": "image",
+      "required": true
+    }
+  ]
+}

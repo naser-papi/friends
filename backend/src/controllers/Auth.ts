@@ -1,5 +1,6 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import { sendEmail } from "../helpers/Utils";
 import User, { IUserSchema } from "../models/User";
 
 /*Register User*/
@@ -22,10 +23,13 @@ export const register = async (req, res) => {
       picturePath,
       friends,
       location,
+      roles: ["User"],
       occupation
     });
 
     const savedUser = await newUser.save();
+    await sendEmail(email, `<h1>please click link blow to conform your account</h1>`);
+    delete savedUser.password;
     res.status(200).json(savedUser);
   } catch (err) {
     res.status(400).json({ error: err.message });

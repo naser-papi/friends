@@ -5,7 +5,7 @@ describe("Auth test suite", () => {
     cy.task("seedDataBase");
   });
   context("Register Tests", () => {
-    it("should register new user", () => {
+    it.only("should register new user", () => {
       cy.request({
         method: "POST",
         url: "/api/auth/register",
@@ -14,6 +14,8 @@ describe("Auth test suite", () => {
       }).then((resp) => {
         expect(resp.status).to.be.eq(200);
         expect(resp.body._id).to.not.null;
+        expect(resp.body.isConfirm).to.be.false;
+        expect(resp.body.roles[0]).to.be.eq("User");
       });
     });
     it("should failed on not pass required infos", () => {

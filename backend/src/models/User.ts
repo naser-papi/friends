@@ -12,6 +12,8 @@ export interface IUserSchema {
   occupation: string;
   viewedProfile: number;
   impressions: number;
+  isConfirm: boolean;
+  roles: string[];
   _id: string;
 }
 
@@ -52,6 +54,10 @@ const UserSchema = new mongoose.Schema<IUserSchema>(
       type: [String],
       default: []
     },
+    roles: {
+      type: [String],
+      default: []
+    },
     location: String,
     occupation: String,
     viewedProfile: {
@@ -61,6 +67,10 @@ const UserSchema = new mongoose.Schema<IUserSchema>(
     impressions: {
       type: Number,
       default: 0
+    },
+    isConfirm: {
+      type: Boolean,
+      default: false
     }
   },
   { timestamps: true }
