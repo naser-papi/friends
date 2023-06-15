@@ -1,14 +1,10 @@
 import React from "react";
-import { Avatar, IconButton, styled } from "@mui/material";
+import { Avatar, styled } from "@mui/material";
 import { IAvatarWithInfo } from "../models/FormTypes";
 
 const AvatarWithInfo = styled((props: IAvatarWithInfo) => (
   <div {...props}>
-    {props.image ? (
-      <Avatar alt="image" src={props.image}></Avatar>
-    ) : (
-      <IconButton>{props.icon}</IconButton>
-    )}
+    {props.image ? <Avatar alt="image" src={props.image}></Avatar> : <>{props.icon}</>}
     <section>
       {props.title && <strong>{props.title}</strong>}
       {props.subtitle && <span>{props.subtitle}</span>}
