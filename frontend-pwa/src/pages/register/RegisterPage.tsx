@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, CssBaseline, Grid, Paper, Typography, useTheme } from "@mui/material";
-import { withBasePage } from "../../components/BasePage";
+import { withBasePage } from "../../components/layout/BasePage";
 import RegisterForm from "./RegisterForm";
-import NavLinkGrid from "../../components/NavLinkGrid";
+import NavLinkGrid from "../../components/widget/NavLinkGrid";
 import { PageRoutes } from "../../models/GeneralTypes";
 
 const RegisterPage = withBasePage(() => {

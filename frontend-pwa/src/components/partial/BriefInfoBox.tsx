@@ -15,10 +15,10 @@ import WorkIcon from "@mui/icons-material/Work";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EditIcon from "@mui/icons-material/Edit";
-import { IUserInfo } from "../models/GeneralTypes";
-import { useLayouContext } from "./LayoutProvider";
-import AvatarWithInfo from "./AvatarWithInfo";
-import InfoLine from "./InfoLine";
+import { IUserInfo } from "../../models/GeneralTypes";
+import { useLayouContext } from "../layout/LayoutProvider";
+import AvatarWithInfo from "../widget/AvatarWithInfo";
+import InfoLine from "../widget/InfoLine";
 
 const InfoBox = styled(Box)(({ theme }) => ({
   padding: theme.spacing(1),

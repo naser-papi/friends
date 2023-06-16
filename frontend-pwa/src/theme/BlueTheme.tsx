@@ -23,6 +23,12 @@ const darkBlue: ThemeOptions = {
 const lightBlue: ThemeOptions = {
   palette: {
     mode: "light",
+    background: {
+      default: "#efefef"
+    },
+    primary: {
+      main: "#efefef"
+    },
     info: {
       main: "#1e1e1e",
       light: "#204165",

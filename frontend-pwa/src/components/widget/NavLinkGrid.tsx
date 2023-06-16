@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import { INavLinkGrid } from "../models/GeneralTypes";
+import { INavLinkGrid } from "../../models/GeneralTypes";
 import { Grid, Link } from "@mui/material";
 
 const NavLinkGrid: React.FC<INavLinkGrid> = (props) => {

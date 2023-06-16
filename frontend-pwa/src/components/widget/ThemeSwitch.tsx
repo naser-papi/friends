@@ -1,8 +1,8 @@
 import { styled } from "@mui/material/styles";
 import { Switch } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleMode } from "../state/generalSlice";
-import { IAppState } from "../models/GeneralTypes";
+import { toggleMode } from "../../state/generalSlice";
+import { IAppState } from "../../models/GeneralTypes";
 import { useState } from "react";
 
 const MaterialUISwitch = styled(Switch)(({ theme, mode }) => ({

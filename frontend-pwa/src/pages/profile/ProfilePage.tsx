@@ -1,7 +1,7 @@
-import { withBasePage } from "../../components/BasePage";
+import { withBasePage } from "../../components/layout/BasePage";
 
 const ProfilePage = withBasePage(() => {
-  return <div>Profile Page</div>;
+  return <h1>Profile Page</h1>;
 }, "Profile");
 
 export default ProfilePage;

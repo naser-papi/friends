@@ -1,11 +1,11 @@
-import { withBasePage } from "../../components/BasePage";
+import { withBasePage } from "../../components/layout/BasePage";
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Box, CssBaseline, Grid, Paper, Typography, useTheme } from "@mui/material";
 import { doLogout } from "../../state/generalSlice";
 import LoginForm from "./LoginForm";
 import { PageRoutes } from "../../models/GeneralTypes";
-import NavLinkGrid from "../../components/NavLinkGrid";
+import NavLinkGrid from "../../components/widget/NavLinkGrid";
 
 const LoginPage = withBasePage(() => {
   const dispatch = useDispatch();

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, useTheme } from "@mui/material";
-import { IMainLayout } from "../models/GeneralTypes";
-import SearchAppBar from "./appbar/AppBar";
+import { IMainLayout } from "../../models/GeneralTypes";
+import SearchAppBar from "../appbar/AppBar";
 import LayoutProvider from "./LayoutProvider";
 
 const MainLayout: React.FC<IMainLayout> = ({ children, pageTitle }) => {

@@ -1,9 +1,9 @@
 import React, { createContext, useContext, useState } from "react";
-import { ILayoutContext, ILayoutProvider } from "../models/FormTypes";
+import { ILayoutContext, ILayoutProvider } from "../../models/FormTypes";
 import { useSelector } from "react-redux";
 import { Drawer } from "@mui/material";
-import { IAction, IAppState } from "../models/GeneralTypes";
-import BriefInfoBox from "./BriefInfoBox";
+import { IAction, IAppState } from "../../models/GeneralTypes";
+import BriefInfoBox from "../partial/BriefInfoBox";
 
 const LayoutContext = createContext({} as ILayoutContext);
 

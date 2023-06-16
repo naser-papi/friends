@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar, styled } from "@mui/material";
-import { IAvatarWithInfo } from "../models/FormTypes";
+import { IAvatarWithInfo } from "../../models/FormTypes";
 
 const AvatarWithInfo = styled((props: IAvatarWithInfo) => (
   <div {...props}>

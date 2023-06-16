@@ -2,15 +2,17 @@
   "pages": [
     {
       "url": "/",
+      "needToken": true,
       "title": "Home"
+    },
+    {
+      "url": "/profile/1234",
+      "needToken": true,
+      "title": "Profile"
     },
     {
       "url": "/login",
       "title": "Login"
-    },
-    {
-      "url": "/profile/1234",
-      "title": "Profile"
     }
   ],
   "theme": {

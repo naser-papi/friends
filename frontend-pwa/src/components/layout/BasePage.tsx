@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import MainLayout from "./MainLayout";
-import { IBasePage } from "../models/GeneralTypes";
+import { IBasePage } from "../../models/GeneralTypes";
 
 export const withBasePage = (Component, title: string) => {
   return (props) => {

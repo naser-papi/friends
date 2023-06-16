@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
-import { IAppState } from "../models/GeneralTypes";
-import { HasAccess } from "../utils";
+import { IAppState } from "../../models/GeneralTypes";
+import { HasAccess } from "../../utils";
 
 const SecureRoute = ({ roles }) => {
   const location = useLocation();

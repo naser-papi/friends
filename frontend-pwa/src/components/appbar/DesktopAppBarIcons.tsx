@@ -1,5 +1,5 @@
 import React from "react";
-import ThemeSwitch from "../ThemeSwitch";
+import ThemeSwitch from "../widget/ThemeSwitch";
 import { Avatar, Badge, Box, IconButton, Menu, MenuItem, Tooltip, useTheme } from "@mui/material";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";

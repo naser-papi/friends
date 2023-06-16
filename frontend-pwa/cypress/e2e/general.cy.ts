@@ -6,14 +6,25 @@ describe("general tests", () => {
   context("navigation tests", () => {
     it("should switch between different pages", () => {
       cy.wrap(generalData.pages).each((page: any) => {
-        cy.visit(page.url);
+        cy.visit(page.url, {
+          onBeforeLoad(win) {
+            if (page.needToken) {
+              win.initialState = {
+                mode: "light",
+                isLoggedIn: true,
+                isFetchApi: false,
+                userInfo: loginData.savedUser
+              };
+            }
+          }
+        });
         cy.title().should("eq", page.title);
       });
     });
   });
 
   context("layout tests", () => {
-    it.only("should switch between dark and light theme", () => {
+    it("should switch between dark and light theme", () => {
       cy.visit("/", {
         onBeforeLoad(win: Cypress.AUTWindow) {
           win.initialState = {

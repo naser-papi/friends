@@ -1,5 +1,5 @@
 import { Grid, Typography } from "@mui/material";
-import { withBasePage } from "../../components/BasePage";
+import { withBasePage } from "../../components/layout/BasePage";
 
 const HomePage = withBasePage(() => {
   return (

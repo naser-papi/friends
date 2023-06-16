@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar, IconButton } from "@mui/material";
 import SocialDistanceIcon from "@mui/icons-material/SocialDistance";
-import { useLayouContext } from "../LayoutProvider";
+import { useLayouContext } from "../layout/LayoutProvider";
 
 const AppBarAvatar = ({ userInfo }) => {
   const { toggleBriefInfo } = useLayouContext();
